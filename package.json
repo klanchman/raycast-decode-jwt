@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "decode-jwt",
   "title": "Decode JWT",
-  "description": "",
+  "description": "Decode a JSON Web Token (JWT) from the clipboard",
   "icon": "command-icon.png",
   "author": "klanchman",
   "categories": [
@@ -11,14 +11,15 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "decode-jwt",
+      "name": "decode",
       "title": "Decode JWT",
-      "description": "",
+      "description": "Display the decoded content of a JWT",
       "mode": "view"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.32.1"
+    "@raycast/api": "^1.32.1",
+    "js-base64": "^3.7.2"
   },
   "devDependencies": {
     "@types/node": "~16.10.0",
